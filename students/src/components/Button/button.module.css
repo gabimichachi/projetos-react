@@ -1,0 +1,10 @@
+.button{
+    background-color: pink;
+    padding: 20px;
+    font-size: larger;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

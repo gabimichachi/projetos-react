@@ -1,0 +1,10 @@
+.lista{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid pink ;
+    padding: 10px;
+    margin-bottom: 4px;
+}
+
+.lista p{
+    margin:0;
+}
