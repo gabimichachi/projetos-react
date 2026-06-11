@@ -1,0 +1,9 @@
+.autenticado{
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+}
+
+.naoAutenticado{
+    background-color: red;
+    color: rgb(0, 0, 0);
+}

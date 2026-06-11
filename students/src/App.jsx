@@ -1,26 +1,25 @@
 import Alunos from "./components/Alunos/Alunos.jsx";
 import Card from "./components/Card/Card.jsx";
-import Button from "./components/Lista/Lista.jsx";
+import Button from "./components/Button/Button.jsx";
+import MsgUsuario from "./components/MensagemUsuario/MsgUsuario.jsx";
+import UseStateHook from "./components/UseStateHook/UseStateHook.jsx";
+// import Contador from "./components/Contador/Contador.jsx";
 
-import { ListaMap, ListaFroEach, ListaMap0b } from "./components/Lista/Lista.jsx";
 
 function App() {
-
-  const objeto = {
-
-  };
-
-  const styles = {
-
-  };
+ 
 
   return (
     <>
-      <Alunos nome={'ivo'} idade={40} ativo={true} />
-      <Alunos nome={'alex'} idade={32} />
-      <Alunos nome={'nathy'} idade={17} ativo={false} />
-    </>
+
+    <UseStateHook/>
+    <Contador/>
+
+
+
+         </>
   );
+
 }
 
 export default App
