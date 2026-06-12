@@ -1,47 +1,60 @@
-import {useState} from "react"
+// importei o usestate para conseguir criar e alterar estados
+import { useState } from "react";
 
-function UseStateHook(){
-    // iniciar o estado
-    const [nome, setNome] = useState('Clique em mudar.');
-    const [idade, setIdade]= useState(0);
-    const [eFalso, setFalso] = useState(false);
-    const [fruta, setFruta] = useState();
+// importo o css para estilizar o componente
+import styles from "./UseStateHook.module.css";
 
-    // atualizar estado
-    const atualizarNome = () => {
+function UseStateHook() {
 
-        setNome('alex');
+    // aqui criei o estado contador e começo ele com valor 0
+    // no contador guarda o valor
+    // esse setcontador serve para alterar esse valor
+    const [contador, setContador] = useState(0);
 
-    }
+    // isso daq aumenta o contador em 1
+    const Aumentar = () => {
+        setContador(contador + 1);
+    };
 
-    const atualizarIdade = () => {
+    // aq diminui o contador em 1
+    const Diminuir = () => {
+        setContador(contador - 1);
+    };
 
-        setIdade(idade + 1)
+    // aq volta o contador para 0
+    const Zerar = () => {
+        setContador(0);
+    };
 
-    }
+    // aq sorteia um número aleatório entre 0 e 99
+    const Sortear = () => {
+        setContador(Math.floor(Math.random() * 100));
+    };
 
-    const verificarEstado = () => {
+    return (
 
-    }
+        // aq é a div principal do componente
+        <div className={styles.container}>
 
+            {/* aq mostra o valor atual do contador */}
+            <h1 className={styles.Contador}>{contador}</h1>
 
+            {/* aq chama a função para aumentar */}
+            <button className={styles.aumentar} onClick={Aumentar}>+</button>
 
-return (
+            {/* aq chama a função para diminuir */}
+            <button className={styles.aumentar} onClick={Diminuir}>-</button>
 
-    <div>
-        <p>Nome: {nome}</p>
-        <button onClick={atualizarNome}>Mudar</button>
+            {/* aq chama a função para zerar */}
+            <button className={styles.aumentar} onClick={Zerar}>reiniciar</button>
 
-        <p>Idade: {idade}</p>
-        <button onClick={atualizarIdade}>Incrementar</button>
+            {/* aq chama a função para sortear um número */}
+            <button className={styles.aumentar} onClick={Sortear}>sortear</button>
 
-        <p>É falso: {eFalso ? 'SIM' : 'NÃO'}</p>
-        <button onClick={verificarEstado}>Verificar</button>
+        </div>
 
-        <p>Fruta Secreta: {fruta}</p>
-        <button>onClick={mostrarFruta}</button>
-    </div>
-)
-
+    );
 }
-export default UseStateHook
+
+
+export default UseStateHook;
