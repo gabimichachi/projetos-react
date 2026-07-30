@@ -3,6 +3,7 @@
 // import UseStateHook from "./components/UseStateHook/UseStateHook.jsx";
 import Contador from "./components/Contador/Contador.jsx";
 import UseEffectHook from "./components/UseEffectHook/UseEffectHook.jsx";
+import UseStateHook from "./components/UseStateHook/UseStateHook.jsx";
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
     <>
 
     {/* <Contador/> */}
-    <UseEffectHook />
+    {/* <UseEffectHook /> */}
+    <UseStateHook />
 
 
 

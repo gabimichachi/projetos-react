@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff9db, #ffe4ef);
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffe58f;
+    color: #8b5e00;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffc6dd;
+    color: white;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.97);
+}
