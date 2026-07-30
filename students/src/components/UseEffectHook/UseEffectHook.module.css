@@ -1,0 +1,25 @@
+/* botão do contador */
+.contadorButton {
+    background-color: #ffe58f;
+    color: #6b4e00;
+    border: 2px solid #ffc6dd;
+    border-radius: 18px;
+    padding: 15px 35px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(255, 198, 221, 0.4);
+}
+
+/* efeito ao passar o mouse */
+.contadorButton:hover {
+    background-color: #ffc6dd;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* efeito ao clicar */
+.contadorButton:active {
+    transform: scale(0.97);
+}
