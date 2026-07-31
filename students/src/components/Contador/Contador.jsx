@@ -1,18 +1,13 @@
-
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Contador.module.css";
 
 function Contador() {
-  return (
-    <div>
-      
-    </div>
-  );
-}
-
-const [automatico, setAutomatico] = useState(false);
+  const [contador, setContador] = useState(0);
 
 // efeito que monitora o estado "automatico"
+const [automatico, setAutomatico] = useState(false); 
+
+
 
 useEffect(() =>{
 
@@ -46,7 +41,6 @@ useEffect(() =>{
 
   }
 
-
-
+}
 
 export default Contador;
