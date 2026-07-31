@@ -67,6 +67,7 @@ function Tema() {
                     <button onClick={diminuirContador}>-</button>
                     <button onClick={aumentarContador}>+</button>
                 </div>
+                
                 <p>
                     O useEffect observa a variável <strong>contador</strong> e 
                     executa sempre que ela muda.
@@ -97,6 +98,7 @@ function Tema() {
                 <button onClick={alternarTema} className={styles.botaoTema}>
                     Alternar para tema  {temaEscuro ? "Claro" : "Escuro"}
                 </button>
+
                  <p>
                     O useEffect observa a variável <strong>temaEscuro</strong> e 
                     executa sempre que o tema é alterado.
