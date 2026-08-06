@@ -5,6 +5,7 @@ import Contador from "./components/Contador/Contador.jsx";
 import UseEffectHook from "./components/UseEffectHook/UseEffectHook.jsx";
 import UseStateHook from "./components/UseStateHook/UseStateHook.jsx";
 import Tema from "./components/Tema/Tema.jsx"
+import TesteConsulta from "./components/TesteConsulta/TesteConsulta.jsx";
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
     {/* <Contador/> */}
     {/* <UseEffectHook /> */}
     {/* <UseStateHook /> */}
-    <Tema></Tema>
+    {/* <Tema></Tema> */}
+      <TesteConsulta />
 
 
 
